@@ -1,4 +1,42 @@
 ---
 layout: home
 author_profile: true
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.5"
+  overlay_image: /assets/images/code-bg.jpg
+  actions:
+    - label: "View My Projects"
+      url: "/portfolio/"
+excerpt: "Software Developer passionate about creating efficient, scalable solutions and learning new technologies."
+intro: 
+  - excerpt: 'Follow me on [GitHub](https://github.com/yourusername) to see my latest work, or connect on [LinkedIn](https://linkedin.com/in/yourusername) for professional opportunities.'
+feature_row:
+  - image_path: /assets/images/project1-thumb.jpg
+    alt: "E-Commerce Platform"
+    title: "E-Commerce Platform"
+    excerpt: "Full-stack web application built with React, Node.js, and MongoDB."
+    url: "/portfolio/ecommerce-platform/"
+    btn_label: "View Project"
+    btn_class: "btn--primary"
+  - image_path: /assets/images/project2-thumb.jpg
+    alt: "Task Management API"
+    title: "Task Management API"
+    excerpt: "RESTful API with authentication, real-time updates, and comprehensive testing."
+    url: "/portfolio/task-management-api/"
+    btn_label: "View Project"
+    btn_class: "btn--primary"
+  - image_path: /assets/images/project3-thumb.jpg
+    alt: "Data Visualization Dashboard"
+    title: "Data Visualization Dashboard"
+    excerpt: "Interactive dashboard for analyzing large datasets using D3.js and Python."
+    url: "/portfolio/data-dashboard/"
+    btn_label: "View Project"
+    btn_class: "btn--primary"
+---
+
+{% include feature_row id="intro" type="center" %}
+
+{% include feature_row %}
+
 ---
